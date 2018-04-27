@@ -71,7 +71,7 @@ class pluginSEOBreadcrumbs extends Plugin {
     if ($Page->isChild()) {
 		    $html .= '<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="'.$Page->parentMethod('permalink').'" itemprop="item" ><span itemprop="name">'.$Page->parentMethod('title').'</span></a><meta itemprop="position" content="'.$seoposition.'" /></li>';
     }
-    $html .= '<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><span itemprop="name"><a href="'.HTML_PATH_ADMIN_ROOT.'edit-content/';
+   $html .= '<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><span itemprop="name"><a href="';
       if ($Page->isChild()) {
         $seoposition++;
         $html .=  $Page->parentMethod('slug').'/';
